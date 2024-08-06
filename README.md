@@ -1,6 +1,7 @@
 # MusicScore-Inference
 
 Official inference script for text-driven Music Score Generation experiment of [paper](https://arxiv.org/abs/2406.11462):
+
 **MusicScore: A Dataset for Music Score Modeling and Generation**.
 
 > [Yuheng Lin](https://rozenthegoat.github.io), [Zheqi Dai](https://github.com/dzq84) and [Qiuqiang Kong](https://github.com/qiuqiangkong)
@@ -12,8 +13,13 @@ This codebase is under Python 3.11. To setup a conda environment, run the follow
 ```
 conda create -n ScoreGen python=3.11
 conda activate ScoreGen
+```
+
+```
 pip install -r requirement.yaml
 ```
+
+# Run
 
 An example shell script to run the inference is provided `inference.sh`.
 
