@@ -6,7 +6,7 @@ Official inference script for text-driven Music Score Generation experiment of [
 
 > [Yuheng Lin](https://rozenthegoat.github.io), [Zheqi Dai](https://github.com/dzq84) and [Qiuqiang Kong](https://github.com/qiuqiangkong)
 
-# Setup
+## Setup
 
 This codebase is under Python 3.11. To setup a conda environment, run the following:
 
@@ -19,7 +19,7 @@ conda activate ScoreGen
 pip install -r requirement.yaml
 ```
 
-# Run
+## Run
 
 An example shell script to run the inference is provided `inference.sh`.
 
@@ -42,7 +42,7 @@ python main.py \
   --ddim_steps 10 \
 ```
 
-# Gradio Demo
+## Gradio Demo
 
 We also support a simple Gradio web interface for easier inference.
 
