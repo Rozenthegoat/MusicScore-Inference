@@ -19,6 +19,11 @@ conda activate ScoreGen
 pip install -r requirement.yaml
 ```
 
+### Prepare the checkpoint
+
+The global step of 78000 has been released on Huggingface, [portal here](https://huggingface.co/RozenWhite/ScoreDiffusion/tree/main).
+Download it, and make sure you place it correctly.
+
 ## Run
 
 An example shell script to run the inference is provided `inference.sh`.
@@ -33,7 +38,7 @@ It is also encouraged to make your own attempt by modifying the arguments:
 CUDA_VISIBLE_DEVICES=0 \
 python main.py \
   --prompt "a music score of piano" \
-  --ckpt_path "checkpoint/epoch_78000.pt" \
+  --ckpt_path "path/to/checkpoint" \
   --config "config.yaml" \
   --outpath "result.jpg" \
   --n_sample 5 \
